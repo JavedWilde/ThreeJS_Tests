@@ -26,7 +26,7 @@ dirLight.shadow.camera.right = 2;
 dirLight.shadow.camera.near = 0.1;
 dirLight.shadow.camera.far = 40;
 scene.add( dirLight );
-const ambLight = new thjs.AmbientLight(0x080808)
+const ambLight = new thjs.AmbientLight(0xffffff)
 scene.add(ambLight)
 
 const mesh = new thjs.Mesh( new thjs.PlaneGeometry( 100, 100 ), new thjs.MeshPhongMaterial( { color: 0x404040, depthWrite: false } ) );
