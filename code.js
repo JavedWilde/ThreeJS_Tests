@@ -29,7 +29,7 @@ scene.add( dirLight );
 const ambLight = new thjs.AmbientLight(0xffffff)
 scene.add(ambLight)
 
-const mesh = new thjs.Mesh( new thjs.PlaneGeometry( 100, 100 ), new thjs.MeshPhongMaterial( { color: 0x404040, depthWrite: false } ) );
+const mesh = new thjs.Mesh( new thjs.PlaneGeometry( 100, 100 ), new thjs.MeshPhongMaterial( { color: 0xff0000, depthWrite: false } ) );
 mesh.rotation.x = - Math.PI / 2;
 mesh.receiveShadow = true;
 scene.add( mesh );
